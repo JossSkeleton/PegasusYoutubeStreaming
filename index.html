@@ -75,6 +75,11 @@
 	    {
 		    player.cueVideoById(videoId, startSeconds);
 	    }
+	    
+	    function playVideoAtStartSeconds(startSeconds)
+	    {
+		    player.seekTo(startSeconds);
+	    }
 	  
 	  function playVideo() {
         player.playVideo();
