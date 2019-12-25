@@ -48,10 +48,15 @@
       }
 	  
 	  
-	  function loadVideo(videoId, startSeconds)
+	  function loadAndPlayVideo(videoId, startSeconds)
 	  {
 		player.loadVideoById(videoId, startSeconds);
 	  }
+	    
+	    function cueVideo(videoId, startSeconds)
+	    {
+		    player.cueVideoById(videoId, startSeconds);
+	    }
 	  
 	  function playVideo() {
         player.playVideo();
