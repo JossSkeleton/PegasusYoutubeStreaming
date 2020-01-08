@@ -35,11 +35,11 @@
           height: '200',
           width: '200',
           videoId: GetURLParameter('videoCode'),
-		playerVars:
+		/*playerVars:
 			{ 
 				'autoplay':1,
 				'mute':1
-			},
+			},*/
           events:
 		  {
             'onReady': onPlayerReady,
@@ -52,7 +52,7 @@
 	//immediately play the video
     function onPlayerReady(event)
 	{
-		event.target.playVideo();
+		//event.target.playVideo();
     }
 	
     //  The API calls this function when the player's state changes.
@@ -64,8 +64,8 @@
 	{
         if (event.data == YT.PlayerState.PLAYING && !done)
 		{
-			setTimeout(unMuteVideo, 5000);
-			//pauseVideo();
+			//setTimeout(unMuteVideo, 5000);
+			pauseVideo();
 			done = true;
         }
     }
@@ -108,5 +108,5 @@
 	
     </script>
   </body>
-	v12_web
+	v13_web
 </html>
