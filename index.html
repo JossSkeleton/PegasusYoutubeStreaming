@@ -35,6 +35,10 @@
           height: '200',
           width: '200',
           videoId: GetURLParameter('videoCode'),
+		playerVars:
+			{ 
+				'autoplay':1
+			},
           events:
 		  {
             'onReady': onPlayerReady,
@@ -97,5 +101,5 @@
 	
     </script>
   </body>
-	v5_web
+	v6_web
 </html>
