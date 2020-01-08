@@ -64,7 +64,7 @@
 	{
         if (event.data == YT.PlayerState.PLAYING && !done)
 		{
-			player.unMute();
+			setTimeout(unMuteVideo, 1000);
 			//pauseVideo();
 			done = true;
         }
@@ -100,8 +100,13 @@
 	{
         player.pauseVideo();
     }
+	    
+	    function unMuteVideo()
+	    {
+		    player.unMute();
+	    }
 	
     </script>
   </body>
-	v8_web
+	v9_web
 </html>
