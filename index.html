@@ -1,19 +1,6 @@
 <!DOCTYPE html>
 <html>
 	
-	<head>
-<style>
-iframe{
-  margin:0 auto;
-  display:block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-</style>
-</head>
-	
   <body>
     <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
     <div id="player"></div>
@@ -46,8 +33,8 @@ iframe{
 	{
         player = new YT.Player('player',
 		{
-          height: '200',
-          width: '200',
+          height: '1000',
+          width: '1000',
           videoId: GetURLParameter('videoCode'),
 		/*playerVars:
 			{ 
@@ -122,5 +109,5 @@ iframe{
 	
     </script>
   </body>
-	v18_web
+	v19_web
 </html>
